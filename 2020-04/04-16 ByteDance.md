@@ -10,7 +10,7 @@
 
 ### 实现
 
-https://codepen.io/AielloChan/pen/LYpNeRY?editors=0010
+https://codepen.io/AielloChan/pen/LYpNeRY?editors=0011
 
 ## 2. 实现 sum 函数可多参数、可重复调用、可直接输出
 
