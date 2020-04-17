@@ -14,7 +14,21 @@ https://codepen.io/AielloChan/pen/LYpNeRY?editors=0011
 
 ## 2. 实现 sum 函数可多参数、可重复调用、可直接输出
 
-## 3. 实现
+> 实现函数 sum(1,2)(3,4) 并能输出 console.log(sum(1,2))
+
+考察柯里化和原型方法知识点，通过递归懒计算可达到
+
+https://codepen.io/AielloChan/pen/jObqdVo?editors=1111
+
+## 3. 实现一个类，支持连续调用
+
+> const pet = new Pet()
+pet.eat().sleep(5).play().sleep(5).work()
+sleep 函数需要是异步调用
+
+考察队列的使用
+
+
 
 ## 4. 判断 this
 
