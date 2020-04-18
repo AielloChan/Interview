@@ -48,4 +48,36 @@ https://codepen.io/AielloChan/pen/zYvBrRQ?editors=0011
 
 ## 4. 判断 this
 
+```
+// 判断输出并解释 this 指向
+window.name = "ByteDance";
+function A() {
+  this.name = 123;
+}
+A.prototype.getA = function () {
+  console.log(this);
+  return this.name + 1;
+};
+let a = new A();
+let funcA = a.getA;
+funcA();
+a.getA();
+```
+
+这个其实是非常简单的 this 指向问题（我太想结束面试了，题都没看完就说不会做。。。），function 函数中的 this 指向，是在执行的时候才确定的，和箭头函数不同（箭头函数是在申明的时候就确定的）
+
+所以，funcA 在执行的时候，其处于全局上下文中，所以 this 指向的是 window；a.getA 函数在执行的时候，其上下文是实例 a，所以其 this 指向则是 a
+
 ## 5. 判断 setTimeout 输出
+
+```
+for(var i=0; i< 6; i++){
+  setTimeout(()=>{
+    console.log(i)
+  }, 1000)
+}
+```
+
+这个其实非常简单了，因为 setTimeout 是会将回调函数直接放到执行队列末尾，所以所有的 setTimeout 都是要等到 for 循环执行完后才会开始执行，同时，因为他们都几乎是在同一时间被加入到执行队列中的，所以，他们会直接连续输出文字，而不是间隔一秒。最后因为 var 会存在变量提升，所以所有的 setTimeout 都公用的一个 i 变量，最终输出的也都是 6 了（如果把 var 换成 let 就会依次输出 0 到 5）
+
+*面试官惊了，上面这题都不会回答，那给我出了一个最简单的。我回答的是 “每隔一秒输出 0！！！”*
