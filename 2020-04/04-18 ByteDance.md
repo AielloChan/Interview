@@ -73,3 +73,9 @@ https://codepen.io/AielloChan/pen/OJyXROm?editors=0011
 ## 8. 堆排序也一起吧
 
 https://codepen.io/AielloChan/pen/MWaebdy?editors=0011
+
+## 9. 假设你正在爬楼梯。需要 n 阶你才能到达楼顶。每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？
+
+使用递归方法来出答案
+
+https://codepen.io/AielloChan/pen/BaozpBe?editors=0011
