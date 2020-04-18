@@ -42,3 +42,10 @@ https://codepen.io/AielloChan/pen/RwWRRwq?editors=0011
 
 https://codepen.io/AielloChan/pen/pojbbNE?editors=0011
 
+## 4. 字符串解密问题，一个单词奇数位抽出来做前半部分，偶数位倒序后做后半部分，拼接起来，形成一个串，你要解密出原来的字符串。加密过程 "Welcome" -> "Wloe" + "mce" -> "Wloemce"，你要做解密算法。
+
+没啥说的，折半分别操作即可
+
+https://codepen.io/AielloChan/pen/xxwOOvm?editors=0011
+
+
