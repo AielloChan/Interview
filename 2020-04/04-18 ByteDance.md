@@ -79,3 +79,17 @@ https://codepen.io/AielloChan/pen/MWaebdy?editors=0011
 使用递归方法来出答案
 
 https://codepen.io/AielloChan/pen/BaozpBe?editors=0011
+
+## 10. 来个有 UI 的：实现函数 function time(hour, min) 能够画出一个时钟
+
+这个也很简单
+
+CSS 版本
+
+https://codepen.io/AielloChan/pen/XWmKpbR
+
+Canvas 版本
+
+再补充吧（面试也不多见用 canvas 的
+
+Svg 版本随意
