@@ -69,3 +69,7 @@ https://codepen.io/AielloChan/pen/eYpzdRQ?editors=0011
 基本
 
 https://codepen.io/AielloChan/pen/OJyXROm?editors=0011
+
+## 8. 堆排序也一起吧
+
+https://codepen.io/AielloChan/pen/MWaebdy?editors=0011
