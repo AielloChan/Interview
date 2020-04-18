@@ -48,4 +48,12 @@ https://codepen.io/AielloChan/pen/pojbbNE?editors=0011
 
 https://codepen.io/AielloChan/pen/xxwOOvm?editors=0011
 
+## 5. repeat方法
+```
+使用JS实现一个repeat方法，
+function repeat (func, times, wait) { /* your code */ }
+const repeatFunc = repeat(alert, 4, 3000), 调用这个 repeatedFunc(“hellworld”)，会alert 4次 helloworld, 每次间隔3秒
+```
+感觉主要是考察一个柯里化和参数的使用
 
+https://codepen.io/AielloChan/pen/VwvjKKY?editors=0011
