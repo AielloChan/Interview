@@ -36,3 +36,9 @@ https://codepen.io/AielloChan/pen/RwWRRwq?editors=0011
 
 时间复杂度和空间复杂度保留最高次幂并去除系数，都是 O(n)
 
+## 3. 输入一个区间 [l,r]，请问里面有没有能组成三角形三边的三个数
+
+组成三角形的条件是，三边长度都要大于0，且任意两边和大于第三边。由于是区间，所以要求至少有三个正数即可。
+
+https://codepen.io/AielloChan/pen/pojbbNE?editors=0011
+
