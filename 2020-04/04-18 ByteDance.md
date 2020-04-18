@@ -57,3 +57,15 @@ const repeatFunc = repeat(alert, 4, 3000), 调用这个 repeatedFunc(“hellworl
 感觉主要是考察一个柯里化和参数的使用
 
 https://codepen.io/AielloChan/pen/VwvjKKY?editors=0011
+
+## 6. 随手来个冒泡排序
+
+基本
+
+https://codepen.io/AielloChan/pen/eYpzdRQ?editors=0011
+
+## 7. 顺便来个快速排序
+
+基本
+
+https://codepen.io/AielloChan/pen/OJyXROm?editors=0011
