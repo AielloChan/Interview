@@ -40,6 +40,12 @@ sleep 函数需要是异步调用
 
 https://codepen.io/AielloChan/pen/abvZvXR?editors=0011
 
+### 思路二
+
+用 Promise 实现，这样好处是不用去维护复杂的队列了，简洁直观。缺点是，所有的函数都会变为异步的
+
+https://codepen.io/AielloChan/pen/zYvBrRQ?editors=0011
+
 ## 4. 判断 this
 
 ## 5. 判断 setTimeout 输出
