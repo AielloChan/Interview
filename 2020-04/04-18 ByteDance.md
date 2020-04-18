@@ -19,3 +19,20 @@
 这个题记得在 leetcode 见过。牌数量不会太多，所以选用递归来解题。反向执行即可
 
 https://codepen.io/AielloChan/pen/qBONZgP?editors=0011
+
+## 2. 复杂度考察
+
+```
+一段字符串"www.bytedance.com"反转成"com.bytedance.www" (要求时间复杂度O(n)，空间复杂度O(n)）
+```
+
+做了两个版本，一个是反转成 "com.bytedance.www" 的
+
+https://codepen.io/AielloChan/pen/JjYKKoM?editors=0011
+
+一个是反转成 "moc.ecnadetyb.www" 的（完全反转）
+
+https://codepen.io/AielloChan/pen/RwWRRwq?editors=0011
+
+时间复杂度和空间复杂度保留最高次幂并去除系数，都是 O(n)
+
