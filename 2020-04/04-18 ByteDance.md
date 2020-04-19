@@ -283,10 +283,22 @@ https://codepen.io/AielloChan/pen/zYvBeXo?editors=0011
   7   8
 ```
 
+使用递归就行了
+
 https://codepen.io/AielloChan/pen/ExVyMyX?editors=0011
 
 ## 24. 二叉树的先序遍历
 
 使用上面的那个二叉树
 
+同样递归，只需修改一点点
+
 https://codepen.io/AielloChan/pen/zYvBbNz?editors=0011
+
+## 25. 二叉树的层次遍历
+
+使用上面的那个二叉树
+
+这次需要用到队列了
+
+https://codepen.io/AielloChan/pen/NWGrJwq?editors=0011
