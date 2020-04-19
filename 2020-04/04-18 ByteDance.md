@@ -221,3 +221,46 @@ https://codepen.io/AielloChan/pen/Vwvjgpb?editors=0011
 继续复习，记住防抖就是延迟执行，多用于搜索框，要等待用户停止输入指定时间后，再开始发出请求。
 
 https://codepen.io/AielloChan/pen/YzyWBar?editors=0011
+
+## 21. 一个关于 arguments 归属的问题（自出题）
+
+```
+function greet() {
+  return () => {
+    const args = Array.from(arguments);
+    console.log(this);
+    console.log(args);
+  };
+}
+
+const bindedGreet = greet.bind({
+  foo: "bar",
+});
+const fn = bindedGreet("hello");
+const bindedFn = fn.bind({
+  bar: "foo",
+});
+bindedFn("world");
+```
+
+主要是想考察 `this` 和 `arguments` 这两个变量的取值。
+
+我的答案：
+```
+{
+  foo: "bar",
+}
+["world"]
+```
+
+正确答案：
+```
+{
+  foo: "bar",
+}
+["hello"]
+```
+
+实验说明，箭头函数中的 arguments 还是用的父级函数的。
+
+其实可以再进一步，**多重箭头函数中，arguments 和 this 都是用的从内向外第一个非箭头函数的值**。
