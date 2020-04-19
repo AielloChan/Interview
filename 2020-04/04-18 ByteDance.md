@@ -284,3 +284,9 @@ https://codepen.io/AielloChan/pen/zYvBeXo?editors=0011
 ```
 
 https://codepen.io/AielloChan/pen/ExVyMyX?editors=0011
+
+## 24. 二叉树的先序遍历
+
+使用上面的那个二叉树
+
+https://codepen.io/AielloChan/pen/zYvBbNz?editors=0011
