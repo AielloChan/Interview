@@ -215,3 +215,9 @@ XSS 则是 **跨站脚本** 攻击，原理是网站中出现了不应该出现�
 来，码起来
 
 https://codepen.io/AielloChan/pen/Vwvjgpb?editors=0011
+
+## 20. 防抖函数 debounce
+
+继续复习，记住防抖就是延迟执行，多用于搜索框，要等待用户停止输入指定时间后，再开始发出请求。
+
+https://codepen.io/AielloChan/pen/YzyWBar?editors=0011
