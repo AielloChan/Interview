@@ -90,6 +90,6 @@ https://codepen.io/AielloChan/pen/XWmKpbR
 
 Canvas 版本
 
-再补充吧（面试也不多见用 canvas 的
+https://codepen.io/AielloChan/pen/MWaeJEm?editors=0010
 
 Svg 版本随意
