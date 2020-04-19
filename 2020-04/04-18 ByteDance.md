@@ -107,3 +107,63 @@ while (true) {}
 
 ~~因为浏览器有循环优化，所以上面的 hello world 会成功输出~~
 其实浏览器没有优化，while 死循环阻塞了主线程，导致 js 无法继续事件循环，所以所有的操作都会卡住
+
+## 13. 写一个 EventEmitter 类
+
+https://codepen.io/AielloChan/pen/jObrvEw?editors=0011
+
+## 14. 判断 bind 后 apply 会不会改变 this （自出题）
+
+```
+this.name = "foo";
+function greet() {
+  console.log(this.name);
+}
+
+const bindedFunc = greet.bind({
+  name: "bar",
+});
+
+greet();
+bindedFunc();
+bindedFunc.apply({ name: "foobar" });
+```
+
+判断输出
+
+**bind 优先级大于 call 和 apply 对于 this 的绑定**
+
+那这个呢
+
+```
+this.name = "foo";
+const greet = () => {
+  console.log(this.name);
+};
+
+const bindedFunc = greet.bind({
+  name: "bar",
+});
+
+greet();
+bindedFunc();
+bindedFunc.apply({ name: "foobar" });
+bindedFunc.call({ name: "foobar" });
+```
+
+**箭头函数的 this 绑定大于 bind、apply、call**
+
+```
+// ES6
+const say = () => {
+  console.log(this.name)
+}
+
+// ES5
+var that = this
+var say = function(){
+  console.log(that.name)
+}
+```
+
+因为在 ES5 的实现中，内部 `this` 已被替换，所以实际上该函数的 `this` 是被成功替换了的，只是箭头函数中的 `this` 已经不是原来的 `this` 了
