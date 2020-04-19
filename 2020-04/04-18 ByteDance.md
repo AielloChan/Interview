@@ -167,3 +167,19 @@ var say = function(){
 ```
 
 因为在 ES5 的实现中，内部 `this` 已被替换，所以实际上该函数的 `this` 是被成功替换了的，只是箭头函数中的 `this` 已经不是原来的 `this` 了
+
+## 15. 原型链
+
+```
+function a() {
+    this.b = 3
+}
+a.prototype.b = 7;
+var t = new a();
+var b = 2;
+a();
+console.log(t.b);
+console.log(b);
+```
+
+其实这个返回的结果很有趣，在浏览器和 nodejs REPL 中输出是一样的 `3, 3`，但是在 `node file.js` 输出不太一样 `3, 2`，由于 VM 的关系，想了解更多可以看这个文章 [Node.js 启动方式：一道关于全局变量的题目引发的思考](https://cnodejs.org/topic/565715c7b1e04fda51bcdf53)
