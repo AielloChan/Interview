@@ -270,3 +270,17 @@ bindedFn("world");
 代码实现
 
 https://codepen.io/AielloChan/pen/zYvBeXo?editors=0011
+
+## 23. 二叉树的后序遍历
+
+```
+     1
+   /   \
+  2     3
+ / \     \
+4   5     6
+   / \
+  7   8
+```
+
+https://codepen.io/AielloChan/pen/ExVyMyX?editors=0011
