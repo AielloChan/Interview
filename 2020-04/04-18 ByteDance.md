@@ -264,3 +264,9 @@ bindedFn("world");
 实验说明，箭头函数中的 arguments 还是用的父级函数的。
 
 其实可以再进一步，**多重箭头函数中，arguments 和 this 都是用的从内向外第一个非箭头函数的值**。
+
+## 22. 给数组加上一个 reduceMap 的方法，该方法和 map 一样的效果，但是是用 reduce 实现的
+
+代码实现
+
+https://codepen.io/AielloChan/pen/zYvBeXo?editors=0011
