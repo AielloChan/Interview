@@ -183,3 +183,16 @@ console.log(b);
 ```
 
 其实这个返回的结果很有趣，在浏览器和 nodejs REPL 中输出是一样的 `3, 3`，但是在 `node file.js` 输出不太一样 `3, 2`，由于 VM 的关系，想了解更多可以看这个文章 [Node.js 启动方式：一道关于全局变量的题目引发的思考](https://cnodejs.org/topic/565715c7b1e04fda51bcdf53)
+
+## 16. 用 css 实现一个模态窗口，要从窗口下面向上弹的动画
+
+animation 版本
+
+https://codepen.io/AielloChan/pen/YzyWdrX?editors=0100
+
+transition 版本
+
+https://codepen.io/AielloChan/pen/gOaMZdm?editors=0010
+
+
+
