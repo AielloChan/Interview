@@ -93,3 +93,17 @@ Canvas 版本
 https://codepen.io/AielloChan/pen/MWaeJEm?editors=0010
 
 Svg 版本随意
+
+## 11. 随手实现一个柯里函数
+
+https://codepen.io/AielloChan/pen/zYvBLmW?editors=0011
+
+## 12. 一个阻塞情况
+
+```
+setTimeout(() => console.log("hello world"))
+while (true) {}
+```
+
+~~因为浏览器有循环优化，所以上面的 hello world 会成功输出~~
+其实浏览器没有优化，while 死循环阻塞了主线程，导致 js 无法继续事件循环，所以所有的操作都会卡住
