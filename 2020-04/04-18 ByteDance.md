@@ -342,3 +342,8 @@ time-wait 则是因为，虽然客户端表示不发送数据了，但不代表�
 增加了很多的新标签，如 canvas、sidebar、section 等等，更多的是表示语义话，比如 header 中的，就应该是表示这是标题头，便于浏览器进行更好的处理，比如为不方便的人群做优化。
 
 增加了不少新的特性，如 preload、async、defer 等，都是为了让开发者能够更简单地控制资源
+
+## 29. 正则实现 trim
+
+https://codepen.io/AielloChan/pen/zYvNPGY?editors=0011
+
