@@ -14,4 +14,4 @@
  limitations under the License.
 -->
 
-# A EventEmitter
+# A Event Target implement
