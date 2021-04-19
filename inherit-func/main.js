@@ -23,11 +23,8 @@ function _instanceof(left, right) {
 }
 
 Object.defineProperty(Foo, Symbol.hasInstance, {
-    value: function (t) {
-        if (typeof t === "function") {
-            return _instanceof(t.prototype, this)
-        }
-        return _instanceof(t, this)
+    value(t) {
+        return _instanceof(typeof t === "function" ? t.prototype : t, this)
     }
 })
 Bar.prototype = Object.create(Foo.prototype)
