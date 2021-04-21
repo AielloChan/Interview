@@ -38,3 +38,11 @@ Codecs String: avc1.42E01E
 ```
 
 就获得详细的编码器以及版本信息了。
+
+如果你不想安装 bento，那基于 JavaScript 也有一个可以读取媒体文件信息的工具，那就是 [mp4box.js](https://github.com/gpac/mp4box.js/)，并且有现成封装好的 node.js 模块 [get-video-mime](https://gitlab.com/dominicp/get-video-mime)。
+
+同样的，获取媒体文件详细信息，如下即可
+
+```bash
+> npx get-video-mime your_mp4_file.mp4
+```
